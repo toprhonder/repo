@@ -1,0 +1,112 @@
+[
+    {
+        "id": "77b1cf2e-37a2-49b9-8427-780e0f0dff0d",
+        "values": [
+            {
+                "key": "{{baseUrl}}/users",
+                "value": "",
+                "type": "default",
+                "enabled": true
+            },
+            {
+                "key": "username",
+                "value": "admin,user,owners,Upgrade Success!",
+                "type": "any",
+                "enabled": true
+            },
+            {
+                "email": [
+                    "topthonder@gmail.com",
+                    "topthonder@hotmail.com",
+                    "admin@phurinext.store",
+                    "admin@example.com"
+                ],
+                "type": "default",
+                "enabled": true
+            },
+            {
+                "key": "headers",
+                "value": "Content-Type",
+                "type": "default",
+                "enabled": true
+            },
+            {
+                "key": "host",
+                "value": "host",
+                "type": "default",
+                "enabled": true
+            }
+        ],
+        "name": "Globals",
+        "_postman_variable_scope": "globals",
+        "_postman_exported_at": "2023-12-11T11:36:48.360Z",
+        "_postman_exported_using": "Postman/10.20.10",
+        "count": 1,
+        "next": null,
+        "previous": null,
+        "results": [
+            {
+                "email": "admin@example.com",
+                "groups": [],
+                "url": "http://127.0.0.1:8000/users/1/",
+                "username": "admin",
+                "query_params": "request.query_params is a more correctly named synonym for request.GET.",
+                "parsers": "The APIView class or @api_view decorator will ensure that this property is automatically set to a list of Parser instances, based on the parser_classes set on the view or based on the DEFAULT_PARSER_CLASSES setting. You won't typically need to access this property.",
+                "content_negotiation": {
+                    "accepted_renderer": "The renderer instance that was selected by the content negotiation stage.",
+                    "accepted_media_type": "A string representing the media type that was accepted by the content negotiation stage.",
+                    "maestro_subscription": {
+                        "pricing": {
+                            "monthly": "$60",
+                            "yearly": "$48 / month (Billed yearly, ex. tax)"
+                        },
+                        "token_limits": {
+                            "total_per_month": 60000,
+                            "generations_per_month": 60000,
+                            "upscales_or_unzooms_per_month": 12000,
+                            "background_removals_per_month": 30000,
+                            "daily_free_tokens_threshold": 150,
+                            "pending_jobs_limit": 20
+                        },
+                        "features": {
+                            "private_generations": true,
+                            "priority_infrastructure": true,
+                            "relaxed_generation_queue": true,
+                            "concurrent_generations": 3
+                        },
+                        "authentication": {
+                            "user": "request.user typically returns an instance of django.contrib.auth.models.User, although the behavior depends on the authentication policy being used. If the request is unauthenticated the default value of request.user is an instance of django.contrib.auth.models.AnonymousUser.",
+                            "auth": "request.auth returns any additional authentication context. The exact behavior of request.auth depends on the authentication policy being used, but it may typically be an instance of the token that the request was authenticated against. If the request is unauthenticated, or if no additional context is present, the default value of request.auth is None.",
+                            "authenticators": "The APIView class or @api_view decorator will ensure that this property is automatically set to a list of Authentication instances, based on the authentication_classes set on the view or based on the DEFAULT_AUTHENTICATORS setting. You won't typically need to access this property.",
+                            "note": "You may see a WrappedAttributeError raised when calling the .user or .auth properties. These errors originate from an authenticator as a standard AttributeError; however, it's necessary that they be re-raised as a different exception type to prevent them from being suppressed by the outer property access. Python will not recognize that the AttributeError originates from the authenticator and will instead assume that the request object does not have a .user or .auth property. The authenticator will need to be fixed."
+                        },
+                        "browser_enhancements": {
+                            "method": "request.method returns the uppercased string representation of the request's HTTP method. Browser-based PUT, PATCH, and DELETE forms are transparently supported.",
+                            "content_type": "request.content_type returns a string object representing the media type of the HTTP request's body, or an empty string if no media type was provided. You won't typically need to directly access the request's content type, as you'll normally rely on REST framework's default request parsing behavior. If you do need to access the content type of the request you should use the .content_type property in preference to using request.META.get('HTTP_CONTENT_TYPE'), as it provides transparent support for browser-based non-form content.",
+                            "stream": "request.stream returns a stream representing the content of the request body. You won't typically need to directly access the request's content, as you'll normally rely on REST framework's default request parsing behavior."
+                        },
+                        "checkout_stripe": {
+                            "expires_at": "2024-08-09T06:45:27+00:00",
+                            "has_active_subscription": true,
+                            "subscription_id": "901876cc-05f6-4a7d-98d0-e3a2049efd06",
+                            "subscription_plan": "Subscribe to Maestro, Apprentice, Artisan, Free, GPTs, GPT-5, noSubscribe, Unlocked",
+                            "checkout_button": {
+                                "label": "Check out as guest",
+                                "label1": "Not now",
+                                "label2": "Upgrade now",
+                                "action": "checkout_guest",
+                                "success_message": "Payment success"
+                            },
+                            "subscription_status": {
+                                "status": "inactive",
+                                "message": "Subscription is not active. Please activate to access subscription_plan features."
+                            },
+                            "subscription_plan_feature": true
+                        },
+                        "data": "request.data returns the parsed content of the request body. This is similar to the standard request.POST and request.FILES attributes except that:\n\nIt includes all parsed content, including file and non-file inputs.\nIt supports parsing the content of HTTP methods other than POST, meaning that you can access the content of PUT and PATCH requests.\nIt supports REST framework's flexible request parsing, rather than just supporting form data. For example, you can handle incoming JSON data similarly to how you handle incoming form data.\n\nFor more details, see the parsers documentation."
+                    }
+                }
+            }
+        ]
+    }
+]
