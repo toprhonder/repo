@@ -15,6 +15,7 @@ rootDirectory = dev
 [config.relations.apiDefinition]
 files[] = {"path":"data.json","metaData":{}}
 files[] = {"path":"index.json","metaData":{}}
+files[] = {"path":"response.json","metaData":{}}
 
 [config.relations.apiDefinition.metaData]
 type = openapi:3

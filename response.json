@@ -1,0 +1,11 @@
+{
+    "response": {
+        "referenceNumber": "722136",
+        "transactionId": "88a54ab6-d3e5-4364-86da-d229cdfa36b1",
+        "lifeTimeoutMins": "5",
+        "expirePassword": "11/12/2023 23:18:28",
+        "transactionOtpId": "pxZmI2xElPzk3ooAjn",
+        "FBBContactNo": ""
+    },
+    "status": true
+}
